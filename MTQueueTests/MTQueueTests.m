@@ -7,7 +7,7 @@
 //
 
 #import "MTQueueTests.h"
-#import "MTQueue.h"
+#import "MTq.h"
 
 
 #define STALL(c) while (c) { [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:0.5]]; }
@@ -20,7 +20,7 @@
 - (void)testMain
 {
     __block BOOL test = NO;
-    [MTQueue main:^{
+    [MTq main:^{
         test = YES;
     }];
     STALL(!test);
@@ -30,7 +30,7 @@
 - (void)testCoreData
 {
     __block BOOL test = NO;
-    [MTQueue coreData:^{
+    [MTq coreData:^{
         test = YES;
     }];
     STALL(!test);
@@ -40,7 +40,7 @@
 - (void)testNetwork
 {
     __block BOOL test = NO;
-    [MTQueue network:^{
+    [MTq network:^{
         test = YES;
     }];
     STALL(!test);
@@ -50,7 +50,7 @@
 - (void)testFile
 {
     __block BOOL test = NO;
-    [MTQueue file:^{
+    [MTq file:^{
         test = YES;
     }];
     STALL(!test);
@@ -63,7 +63,7 @@
 - (void)testBackground
 {
     __block BOOL test = NO;
-    [MTQueue background:^{
+    [MTq background:^{
         test = YES;
     }];
     STALL(!test);
@@ -77,7 +77,7 @@
 - (void)testDefault
 {
     __block BOOL test = NO;
-    [MTQueue def:^{
+    [MTq def:^{
         test = YES;
     }];
     STALL(!test);
@@ -87,7 +87,7 @@
 - (void)testHighPriority
 {
     __block BOOL test = NO;
-    [MTQueue high:^{
+    [MTq high:^{
         test = YES;
     }];
     STALL(!test);
@@ -97,7 +97,7 @@
 - (void)testLowPriority
 {
     __block BOOL test = NO;
-    [MTQueue low:^{
+    [MTq low:^{
         test = YES;
     }];
     STALL(!test);

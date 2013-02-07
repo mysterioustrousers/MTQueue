@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C2D5889416C3581700275C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D5889316C3581700275C01 /* Foundation.framework */; };
-		C2D5889916C3581700275C01 /* MTQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C2D5889816C3581700275C01 /* MTQueue.h */; };
-		C2D5889B16C3581700275C01 /* MTQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D5889A16C3581700275C01 /* MTQueue.m */; };
+		C2D5889916C3581700275C01 /* MTq.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C2D5889816C3581700275C01 /* MTq.h */; };
+		C2D5889B16C3581700275C01 /* MTq.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D5889A16C3581700275C01 /* MTq.m */; };
 		C2D588A316C3581700275C01 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D588A216C3581700275C01 /* SenTestingKit.framework */; };
 		C2D588A516C3581700275C01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D588A416C3581700275C01 /* UIKit.framework */; };
 		C2D588A616C3581700275C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D5889316C3581700275C01 /* Foundation.framework */; };
@@ -35,7 +35,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				C2D5889916C3581700275C01 /* MTQueue.h in CopyFiles */,
+				C2D5889916C3581700275C01 /* MTq.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +45,8 @@
 		C2D5889016C3581700275C01 /* libMTQueue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMTQueue.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D5889316C3581700275C01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2D5889716C3581700275C01 /* MTQueue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTQueue-Prefix.pch"; sourceTree = "<group>"; };
-		C2D5889816C3581700275C01 /* MTQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTQueue.h; sourceTree = "<group>"; };
-		C2D5889A16C3581700275C01 /* MTQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTQueue.m; sourceTree = "<group>"; };
+		C2D5889816C3581700275C01 /* MTq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTq.h; sourceTree = "<group>"; };
+		C2D5889A16C3581700275C01 /* MTq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTq.m; sourceTree = "<group>"; };
 		C2D588A116C3581700275C01 /* MTQueueTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTQueueTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D588A216C3581700275C01 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C2D588A416C3581700275C01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -111,8 +111,8 @@
 		C2D5889516C3581700275C01 /* MTQueue */ = {
 			isa = PBXGroup;
 			children = (
-				C2D5889816C3581700275C01 /* MTQueue.h */,
-				C2D5889A16C3581700275C01 /* MTQueue.m */,
+				C2D5889816C3581700275C01 /* MTq.h */,
+				C2D5889A16C3581700275C01 /* MTq.m */,
 				C2D5889616C3581700275C01 /* Supporting Files */,
 			);
 			path = MTQueue;
@@ -243,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D5889B16C3581700275C01 /* MTQueue.m in Sources */,
+				C2D5889B16C3581700275C01 /* MTq.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

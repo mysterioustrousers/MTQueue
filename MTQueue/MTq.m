@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Mysterious Trousers. All rights reserved.
 //
 
-#import "MTQueue.h"
+#import "MTq.h"
 
-@implementation MTQueue
+@implementation MTq
 
 
 + (NSOperationQueue *)main
@@ -54,28 +54,28 @@
 
 + (void)main:(MTQueueBlock)operation
 {
-    [[MTQueue main] addOperationWithBlock:^{
+    [[MTq main] addOperationWithBlock:^{
         if (operation) operation();
     }];
 }
 
 + (void)coreData:(MTQueueBlock)operation
 {
-    [[MTQueue coreDataQueue] addOperationWithBlock:^{
+    [[MTq coreDataQueue] addOperationWithBlock:^{
         if (operation) operation();
     }];
 }
 
 + (void)network:(MTQueueBlock)operation
 {
-    [[MTQueue networkQueue] addOperationWithBlock:^{
+    [[MTq networkQueue] addOperationWithBlock:^{
         if (operation) operation();
     }];
 }
 
 + (void)file:(MTQueueBlock)operation
 {
-    [[MTQueue fileSystemQueue] addOperationWithBlock:^{
+    [[MTq fileSystemQueue] addOperationWithBlock:^{
         if (operation) operation();
     }];
 }

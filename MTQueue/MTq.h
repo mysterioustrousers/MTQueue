@@ -10,7 +10,7 @@
 typedef void (^MTQueueBlock)();
 
 
-@interface MTQueue : NSObject
+@interface MTq : NSObject
 
 
 + (NSOperationQueue *)main;
