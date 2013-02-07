@@ -14,7 +14,7 @@ Before:
       });
     });
 
-NOW!!!
+Now:
 
     [MTQueue background:^{
       // something in the background
