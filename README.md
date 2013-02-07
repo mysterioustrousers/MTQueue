@@ -8,18 +8,18 @@ Add blocks to queues in a super terse and readable way!
 Before:
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-      // something in the background
+      ...
       dispatch_async(dispatch_get_main_queue(), ^{
-        // back on the main queue
+        ...
       });
     });
 
 Now:
 
-    [MTQueue background:^{
-      // something in the background
-      [MTQueue main:^{
-        // back on the main queue
+    [MTq background:^{
+      ...
+      [MTq main:^{
+        ...
       }];
     }];
 
@@ -39,18 +39,18 @@ pod? => https://github.com/CocoaPods/CocoaPods/
 
 Higher level is better, so some NSOperationQueues are created for you lazily as you need them:
 
-    [MTQueue main:^{
+    [MTq main:^{
       // an operation on the main thread
     }];
 
-    [MTQueue network:^{
+    [MTq network:^{
       // a network operation
     }];
 
-    [MTQueue coreData:^{
+    [MTq coreData:^{
       // a core data operation (serial queue)
     }];
 
-    [MTQueue file:^{
+    [MTq file:^{
       // a file system operation
     }];
