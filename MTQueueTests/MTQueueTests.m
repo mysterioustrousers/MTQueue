@@ -104,6 +104,15 @@
     STAssertTrue(test, nil);
 }
 
+- (void)testLongSyntax
+{
+    __block BOOL test = NO;
+    [MTQueue low:^{
+        test = YES;
+    }];
+    STALL(!test);
+    STAssertTrue(test, nil);
+}
 
 
 @end
