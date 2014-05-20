@@ -31,4 +31,6 @@ typedef MTq MTQueue;
 + (void)high:(MTQueueBlock)block;
 + (void)low:(MTQueueBlock)block;
 
++ (void)after:(NSTimeInterval)delay block:(MTQueueBlock)block;
+
 @end
