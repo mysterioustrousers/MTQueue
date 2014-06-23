@@ -13,7 +13,7 @@ typedef MTq MTQueue;
 
 @interface MTq : NSObject
 
-+ (NSOperationQueue *)main;
++ (NSOperationQueue *)mainQueue;
 + (NSOperationQueue *)coreDataQueue;
 + (NSOperationQueue *)networkQueue;
 + (NSOperationQueue *)fileSystemQueue;

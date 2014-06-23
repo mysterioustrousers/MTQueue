@@ -11,7 +11,7 @@
 @implementation MTq
 
 
-+ (NSOperationQueue *)main
++ (NSOperationQueue *)mainQueue
 {
 	return [NSOperationQueue mainQueue];
 }
@@ -54,7 +54,7 @@
 
 + (void)main:(MTQueueBlock)operation
 {
-    [[MTq main] addOperationWithBlock:^{
+    [[MTq mainQueue] addOperationWithBlock:^{
         if (operation) operation();
     }];
 }
