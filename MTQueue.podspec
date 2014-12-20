@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MTQueue"
-  s.version      = "0.0.3"
+  s.version      = "0.1.0"
   s.summary      = "Add blocks to queues in a super terse and readable way."
   s.homepage     = "https://github.com/mysterioustrousers/MTQueue"
   s.license      = 'MIT'
