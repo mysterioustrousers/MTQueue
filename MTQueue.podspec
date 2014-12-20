@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/mysterioustrousers/MTQueue"
   s.license      = 'MIT'
   s.author       = { "Adam Kirk" => "atomkirk@gmail.com" }
-  s.source       = { :git => "https://github.com/mysterioustrousers/MTQueue.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/mysterioustrousers/MTQueue.git", :tag => s.version.to_s }
   s.source_files = 'MTQueue/MTq.{h,m}'
   s.public_header_files = 'MTQueue/MTq.h'
   s.framework  = 'Foundation'
